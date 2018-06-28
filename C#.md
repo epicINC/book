@@ -332,28 +332,9 @@ if (a+5>method(blah()+4))
 
 this
 --------------------------
-如果有同名冲突, 或子父类调用可强调使用 this
-其他场景可省略
+调用本身属性，字段，方法尽量用 this
 
 Good:
-
-``` csharp
-class Foo {
-    int bar;
- 
-    void Update(int newValue)
-    {
-       bar = newValue;
-    }
- 
-    void Clear()
-    {
-       Update();
-    }
-}
-```
-
-Bad:
 
 ``` csharp
 class Foo {
@@ -370,6 +351,7 @@ class Foo {
     }
 }
 ```
+
 Good:
 
 ``` csharp
@@ -393,8 +375,6 @@ class Message : BaseMessage {
      }
 }
 ```
-
-重构的基本方法:
 
 
 
