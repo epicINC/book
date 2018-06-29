@@ -53,6 +53,7 @@
 | e | 事件参数, Lambda 参数 | `e => e > 10` |
 | T, K | 泛型参数 | `Action<T, K>` |
 | TResult | 泛型返回参数 | `Func<T, K, TResult>` |
+| id, ID | 编号 | public int ID {get;set;} |
 
 
 
