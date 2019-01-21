@@ -4,7 +4,7 @@
 
 ​	当时推出是为了替代大红大紫的 Java applet，而后 Java applet 慢慢退出了舞台。
 
-​	此后的十几年 JavaScript 一直不温不火，只是作为页面效果的点缀。知道 Web2.0 的兴起，带宽有了质的提升，人们对页面效果质量有了很大提升，不在满足于页面跑个浮窗这样的效果。JavaScript 开始兴起，并快速发展，应用范围也开始扩展，不再限于浏览器。应用程序，App，HyperApp，服务端等。技术也日新月异， SPA，SSR，PWA等等。
+​	此后的十几年 JavaScript 一直不温不火，只是作为页面效果的点缀。知道 Web2.0 的兴起，带宽有了质的提升，人们对页面效果质量有了很大提升，不在满足于页面跑个浮窗这样的效果。JavaScript 开始兴起，并快速发展，应用范围也开始扩展，不再限于浏览器。应用程序，App，HybridApp，服务端等。技术也日新月异， SPA，SSR，PWA等等。
 
 ​	
 
@@ -18,6 +18,40 @@
 
 [`npm`](https://www.npmjs.com) Node Package Manage，Node.js 自带的包管理器，因为 node 的包大多数都是 JavaScript 写的，所以几乎也都是跨平台的。另外还有其他优秀的包管理器 比如 [yarn](https://www.yarnpkg.com) 等。
 
+## npm 介绍
+
+### 项目初始化
+
+`npm init`
+
+### package.json 项目描述文件
+
+``` javascript
+{
+  "name": "koademo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "S",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.6.2"
+  },
+  "devDependencies": {
+  }
+}
+```
+
+### 安装包
+
+`npm i <pkgname>`
+
+
+
 
 
 # SPA 框架
@@ -27,4 +61,13 @@
 + [AngularJS](https://angularjs.org)
 
 
+
+# 应用程序
+
++ [electron](https://electronjs.org)
+
+典型案例：
+
++ [Atom](https://atom.io)
++ [Visual Studio Code](https://code.visualstudio.com)
 
